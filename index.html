@@ -1,0 +1,271 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Serif" />
+  <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<style>
+  a{
+    text-decoration:none;
+  }
+  #sitebarRight a{
+    color: black;
+  }
+
+  /* different types of selectors */
+  a[class='FooterText'] {
+    font-style: italic;
+    font-size: 15pt;
+    color: white;
+  }
+
+  a[data-Author="Thomas"] {
+    color: blue;
+    font-style: italic;
+    font-size: 10pt;
+  }
+
+  a[id^="Linn"] {
+    color: green;
+    font-style: italic;
+    font-size: 10pt;
+  }
+  a[id$='Burton']{
+    color: Gold;
+    font-style: italic;
+    font-size: 10pt;
+  }
+
+  a[id~='Max'] {
+    color: yellow;
+    font-style: italic;
+    font-size: 10pt;
+  }
+  a[id *= 'Chuck']{
+    color: DarkOrange;
+    font-style: italic;
+    font-size: 10pt;
+  }
+
+
+
+  nav a {
+    /*float: left; */
+    display: inline;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    margin-left: 3%;
+  }
+
+
+
+  /* pseudo-class */
+  nav a:hover {
+    background-color: #e9ebee;
+  }
+
+  article img {
+    width:100px;
+  }
+
+  #sitebarLeft ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #sitebarLeft li {
+    background-color: 597299;
+    margin-top: 5px;
+    width: 100%;
+  }
+
+  /* pseudo-element */
+  article p::after {
+    content: url('img/ic_share_black_24dp_1x.png');
+  }
+ /* inheritance of CSS */
+  #sitebarRight ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  /* inheritance of CSS */
+  #sitebarRight li {
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+  /* inheritance of CSS */
+  #secoundSection {
+    margin-left: 50%;
+  }
+
+  article {
+    background-color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+  }
+  /* inheritance of CSS */
+  article h1 {
+    font-family: "Droid Serif";
+  }
+  /* inheritance of CSS */
+  article img{
+    width:100%;
+  }
+
+  .title {
+    color: #3b5998;
+  }
+  /* inheritance of CSS */
+  #sitebarLeft li:hover {
+    background-color: #e9ebee;
+  }
+  /* inheritance of CSS */
+  #sitebarRight li:hover {
+    background-color: #3b5998;
+  }
+  /* inheritance of CSS */
+  #sitebarLeft a {
+    color: black;
+  }
+</style>
+
+<body>
+  <!-- Main Part of the Website -->
+  <div id='container'>
+    <!-- Top Navigation of the Website -->
+    <nav>
+      <div id='secoundSection'>
+        <a href="#"><img src="img/ic_help_black_24dp_1x.png"></a>
+        <a href="#">Main Site</a>
+        <a href="#">Name</a>
+        <input type='text' value='Find Friend'>
+      </div>
+
+    </nav>
+
+    <!-- Left Sidebar -->
+    <div id='sitebarLeft'>
+      <ul>
+        <li><a href="index.html"><img src="img/ic_public_black_24dp_1x.png">News Feed</a></li>
+        <li><a href="index.html"><img src="img/ic_message_black_24dp_1x.png">Messenger</a></li>
+        <li><a href="index.html"><img src="img/ic_local_bar_black_24dp_1x.png">Restaurant</a></li>
+        <li><a href="map.html"><img src="img/ic_map_black_24dp_1x.png">Maps</a></li>
+        <li><a href="index.html"><img src="img/ic_schedule_black_24dp_1x.png">Scheduler</a></li>
+
+      </ul>
+
+    </div>
+
+    <div id='mainSection'>
+      <!-- semantic element -->
+      <section>
+        <!-- semantic element -->
+        <article>
+          <h1 class='title'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</h1>
+          <p class='text'>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p>
+          <iframe src="https://www.youtube.com/embed/o5xjX7XiaRo?ecver=2" width="100%" height="200" frameborder="0" allowfullscreen></iframe>
+        </article>
+        <article>
+          <h1 class='title'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</h1>
+          <p class='text'>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p>
+          <img src="img/DSC01085.JPG">
+          <a data-Author='Thomas' class="author">Author: Thomas Mandorfer</a>
+        </article>
+        <article>
+          <h1 class='title'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</h1>
+          <p class='text'>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p>
+          <img src='img/DSC01156.JPG'>
+          <a data-Author='Thomas' class="author">Author: Thomas Mandorfer</a>
+        </article>
+        <article>
+          <h1 class='title'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</h1>
+          <p class='text'>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p>
+          <a id='Max' class="author">Author: Max Mustermann</a>
+        </article>
+        <article>
+          <h1 class='title'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</h1>
+          <p class='text'>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p>
+          <img src='img/DSC01112.JPG'>
+          <a id='Linn_Mika' class="author">Author: Linn Mika</a>
+        </article>
+        <article>
+          <h1 class='title'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</h1>
+          <p class='text'>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p>
+          <img src='img/DSC01156.JPG'>
+          <a id='Linn_Mika' class="author">Author: Linn Mika</a>
+        </article>
+        <article>
+          <h1 class='title'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</h1>
+          <p class='text'>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p>
+          <a id='Chuck_' class="author">Author: Chuck Pigman</a>
+        </article>
+        <article>
+          <h1 class='title'>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</h1>
+          <p class='text'>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+            sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p>
+          <img src='img/DSC01170.JPG'>
+          <a id='_Burton' class="author">Author: Burton Madding</a>
+        </article>
+      </section>
+    </div>
+
+    <!-- Left Sidebar -Right' -->
+    <div id='sitebarRight'>
+      <ul>
+        <li><a href="#"><img src="img/ic_school_black_24dp_1x.png"> Thomas Mandorfer</a></li>
+        <li><a href="#"><img src="img/ic_cake_black_24dp_1x.png">Max Mustermann</a></li>
+        <li><a href="#"><img src="img/ic_location_city_black_24dp_1x.png">Linn Mika</a></li>
+        <li><a href="#"><img src="img/ic_hourglass_full_black_24dp_1x.png">Chuck Pigman</a></li>
+        <li><a href="#"><img src="img/ic_motorcycle_black_24dp_1x.png">Burton Madding</a></li>
+      </ul>
+
+    </div>
+
+
+
+
+  </div>
+  <!-- semantic element -->
+  <footer>
+    <a class='FooterText'>&copy; Thomas Mandorfer All Rights Reserved</a>
+
+  </footer>
+</body>
+
+</html>
