@@ -1,0 +1,201 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Serif" />
+  <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<style>
+  a{
+    text-decoration:none;
+  }
+  #map{
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  #sitebarRight a{
+    color: black;
+  }
+
+  /* different types of selectors */
+  a[class='FooterText'] {
+    font-style: italic;
+    font-size: 15pt;
+    color: white;
+  }
+
+  a[data-Author="Thomas"] {
+    color: blue;
+    font-style: italic;
+    font-size: 10pt;
+  }
+
+  a[id^="Linn"] {
+    color: green;
+    font-style: italic;
+    font-size: 10pt;
+  }
+  a[id$='Burton']{
+    color: Gold;
+    font-style: italic;
+    font-size: 10pt;
+  }
+
+  a[id~='Max'] {
+    color: yellow;
+    font-style: italic;
+    font-size: 10pt;
+  }
+  a[id *= 'Chuck']{
+    color: DarkOrange;
+    font-style: italic;
+    font-size: 10pt;
+  }
+
+
+
+  nav a {
+    /*float: left; */
+    display: inline;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    margin-left: 3%;
+  }
+
+
+
+  /* pseudo-class */
+  nav a:hover {
+    background-color: #e9ebee;
+  }
+
+  article img {
+    width:100px;
+  }
+
+  #sitebarLeft ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #sitebarLeft li {
+    background-color: 597299;
+    margin-top: 5px;
+    width: 100%;
+  }
+
+  /* pseudo-element */
+  article p::after {
+    content: url('img/ic_share_black_24dp_1x.png');
+  }
+ /* inheritance of CSS */
+  #sitebarRight ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  /* inheritance of CSS */
+  #sitebarRight li {
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+  /* inheritance of CSS */
+  #secoundSection {
+    margin-left: 50%;
+  }
+
+  article {
+    background-color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+  }
+  /* inheritance of CSS */
+  article h1 {
+    font-family: "Droid Serif";
+  }
+  /* inheritance of CSS */
+  article img{
+    width:100%;
+  }
+
+  .title {
+    color: #3b5998;
+  }
+  /* inheritance of CSS */
+  #sitebarLeft li:hover {
+    background-color: #e9ebee;
+  }
+  /* inheritance of CSS */
+  #sitebarRight li:hover {
+    background-color: #3b5998;
+  }
+  /* inheritance of CSS */
+  #sitebarLeft a {
+    color: black;
+  }
+</style>
+
+<body>
+  <!-- Main Part of the Website -->
+  <div id='container'>
+    <!-- Top Navigation of the Website -->
+    <nav>
+      <div id='secoundSection'>
+        <a href="#"><img src="img/ic_help_black_24dp_1x.png"></a>
+        <a href="#">Main Site</a>
+        <a href="#">Name</a>
+        <input type='text' value='Find Friend'>
+      </div>
+
+    </nav>
+
+    <!-- Left Sidebar -->
+    <div id='sitebarLeft'>
+      <ul>
+        <li><a href="index.html"><img src="img/ic_public_black_24dp_1x.png">News Feed</a></li>
+        <li><a href="index.html"><img src="img/ic_message_black_24dp_1x.png">Messenger</a></li>
+        <li><a href="index.html"><img src="img/ic_local_bar_black_24dp_1x.png">Restaurant</a></li>
+        <li><a href="#"><img src="img/ic_map_black_24dp_1x.png">Maps</a></li>
+        <li><a href="index.html"><img src="img/ic_schedule_black_24dp_1x.png">Scheduler</a></li>
+
+      </ul>
+
+    </div>
+
+    <div id='mainSection'>
+      <!-- semantic element -->
+      <section>
+        <div id='map'>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d680296.502671081!2d15.772350050990482!3d48.23726885812667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d079e5136ca9f%3A0xfdc2e58a51a25b46!2sWien!5e0!3m2!1sde!2sat!4v1499437166311" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+
+      </section>
+    </div>
+
+    <!-- Left Sidebar -Right' -->
+    <div id='sitebarRight'>
+      <ul>
+        <li><a href="#"><img src="img/ic_school_black_24dp_1x.png"> Thomas Mandorfer</a></li>
+        <li><a href="#"><img src="img/ic_cake_black_24dp_1x.png">Max Mustermann</a></li>
+        <li><a href="#"><img src="img/ic_location_city_black_24dp_1x.png">Linn Mika</a></li>
+        <li><a href="#"><img src="img/ic_hourglass_full_black_24dp_1x.png">Chuck Pigman</a></li>
+        <li><a href="#"><img src="img/ic_motorcycle_black_24dp_1x.png">Burton Madding</a></li>
+      </ul>
+
+    </div>
+
+
+
+
+  </div>
+  <!-- semantic element -->
+  <footer>
+    <a class='FooterText'>&copy; Thomas Mandorfer All Rights Reserved</a>
+
+  </footer>
+</body>
+
+</html>

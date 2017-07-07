@@ -1,0 +1,46 @@
+#container {
+  height: 1500px;
+}
+
+footer {
+  height: 40%;
+  background-color: black;
+  margin-top: 5%;
+}
+
+nav {
+  height: 50px;
+  background: #3b5998;
+  width: 100%;
+}
+
+#sitebarLeft {
+  height: 100%;
+  margin-top: 10px;
+  float: left;
+  width: 20%;
+  background: #e9ebee;
+}
+
+#mainSection {
+  height: 100%;
+  margin-top: 10px;
+  margin-left: 5%;
+  float: left;
+  width: 50%;
+  background: #e9ebee;
+  margin-right: 5%;
+  overflow: scroll;
+}
+
+#sitebarRight {
+  height: 100%;
+  margin-top: 10px;
+  float: left;
+  width: 20%;
+  background: #e9ebee;
+}
+
+nav input {
+  margin: 9px 16px;
+}
